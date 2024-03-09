@@ -14,11 +14,11 @@ int main()
     // registrar los alumnos
     for (int  i = 0; i < 3; i++)
     {
-       cout<<"Ingrese el nombre"<<endl;
+       cout<<"Ingrese el id"<<endl;
        cin>>estudiantes[i].id;
        cout<<"Ingrese el nombre"<<endl;
        cin>>estudiantes[i].nombre;
-       cout<<"Ingrese el direccion"<<endl;
+       cout<<"Ingrese la direccion"<<endl;
        cin>>estudiantes[i].direccion;
     }
     cout<<"nombre ingresados con exito"<<endl;

@@ -1,0 +1,25 @@
+Codigo: 1
+Nombre: 1
+Direccion: 1
+Telefono: 1
+================
+Codigo: 2
+Nombre: 2
+Direccion: 2
+Telefono: 2
+================
+Codigo: 3
+Nombre: 3
+Direccion: 3
+Telefono: 3
+================
+Codigo: 4
+Nombre: 4
+Direccion: 4
+Telefono: 4
+================
+Codigo: 5
+Nombre: 5
+Direccion: 5
+Telefono: 5
+================
