@@ -2,7 +2,7 @@
 con sqlite grafico.
 
 Capitulo #7
-
+    
 #escribir un algoritmo que calcule y escriba una tabla con los 100 primeros números primos. Un número es primo si sólo
 #tiene por divisores la unidad y el propio número
 
