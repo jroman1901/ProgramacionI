@@ -7,11 +7,12 @@ struct  Articulo
 
 class Factura
 {
-    private:
+    private:  // atributos
         string cliente;
         string fecha;
-        Articulo *articulos;
+        Articulo *articulos;  
         int cantidadArticulos;
+        int indice;
         double montototal;
     public:
     Factura(string cliente,string fecha, int cantidaArticulos,double montoTotal)
@@ -21,18 +22,20 @@ class Factura
         this->cantidadArticulos = cantidaArticulos;
         this->montototal= montoTotal;
         articulos = new Articulo[100];
+        this->indice =0;
 
     }
+    // destructor de la clase factura
     ~Factura() {
         delete[] articulos;  // Liberar memoria asignada para los artículos
     }
 
     void agregarArticulo(string nombre, int cantidad, double precio)
     {
-        articulos[cantidadArticulos].nombre = nombre;
-        articulos[cantidadArticulos].cantidad = cantidad;
-        articulos[cantidadArticulos].precio = precio;
-        cantidadArticulos++;
+        articulos[indice].nombre = nombre;
+        articulos[indice].cantidad = cantidad;
+        articulos[indice].precio = precio;
+        indice++;
 
     }
 
@@ -45,13 +48,8 @@ class Factura
         for(int i=0; i<cantidadArticulos;i++)
         {
             cout<<articulos[i].nombre<< " --" <<articulos[i].cantidad<< "unidades a Q"<<articulos[i].precio<<endl;
-
         }
         cout<<"--------------------------"<<endl;
         cout<<"Monto total" <<montototal <<endl;
-
-        
      }
-
-
 };
